@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - Wuschelkopf Hamburg</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!--Barberpole design-->
+
+  <style>
+
+/* Barberpole-Effekt */
+
+.contact-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.contact-container::before,
+.contact-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        #9E2D4E,
+        #9E2D4E 10px,
+        #ffffff 10px,
+        #ffffff 20px
+    );
+    background-size: 28px 28px;
+
+    z-index: 1;
+}
+
+.contact-container::before {
+    left: 0;
+}
+
+.contact-container::after {
+    right: 0;
+}
+
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.contact-info i {
+    color: #9E2D4E;
+    margin-right: 10px;
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: repeating-linear-gradient(
+        45deg,
+        #9E2D4E,
+        #9E2D4E 10px,
+        #ffffff 10px,
+        #ffffff 20px
+    );
+    background-size: 28px 28px;
+    animation: barberpole 2s linear infinite;
+}
+
+@media (max-width: 768px) {
+    .contact-container::before,
+    .contact-container::after {
+        width: 8px;
+    }
+
+    .contact-section {
+        margin: 2rem 10px;
+    }
+}
+</style>
+
+
+  <style>
+    .contact-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #9E2D4E;
+    }
+
+    .contact-section {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      color: #7a2340;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .contact-section p {
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+      color: #444;
+      text-align: center;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+
+    }
+
+    .contact-info div {
+      margin-left: 1rem;
+      text-align: center;
+    }
+
+    .contact-button {
+      background: #9E2D4E;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+
+    .contact-button:hover {
+      background-color: #7a2340;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Haupt Header -->
+  <header class="main-header">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="logo-link"><img src="img/logo_wuschelkopf2.png" alt="Logo"></a></li>
+        <li><a href="index.html">Über uns</a></li>
+        <li><a href="preise.html">Service & Preise</a></li>
+        <li><a href="#products">Produkte</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+      <div class="burger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Subheader -->
+  <header class="sub-header">
+    <p><i class="fas fa-phone"></i><b>Telefonnummer:</b> +49 40 87 43 40 &nbsp | &nbsp &#x2702 <i class="fas fa-envelope"></i><b>E-Mail:</b> info@wuschelkopf-hamburg.de</p>
+  </header>
+
+  <!-- Kontakt-Seite -->
+  <div class="contact-container">
+    <h1>Kontakt</h1>
+
+    <div class="contact-section">
+      <h2>Kontaktinformationen</h2>
+      <div class="contact-info">
+        <div>
+          <p><i class="fas fa-phone"></i><b>Telefonnummer:</b> +49 40 87 43 40</p>
+          <p><i class="fas fa-envelope"></i><b>E-Mail:</b> info@wuschelkopf-hamburg.de</p>
+        </div>
+        <div>
+          <p><i class="fas fa-map-marker-alt"></i><b>Adresse:</b></p>
+          <p>Wuschelkopf Hamburg</p>
+          <p>Wedeler Landstraße 48</p>
+          <p>22559 Hamburg</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h2>Öffnungszeiten</h2>
+      <p>Mo-Fr: 9:00 - 18:00</p>
+      <p>Sa: 10:00 - 14:00</p>
+      <p>So: Geschlossen</p>
+    </div>
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Öffnungszeiten</h3>
+        <p>Mo-Fr: 9:00 - 18:00</p>
+        <p>Sa: 10:00 - 14:00</p>
+        <p>So: Geschlossen</p>
+      </div>
+      <div class="footer-section">
+        <h3>Kontakt</h3>
+        <p>Wuschelkopf Hamburg</p>
+        <p>Wedeler Landstraße 48</p>
+        <p>22559 Hamburg</p>
+        <p><a href="impressum.html">Impressum</a> | <a href="#">Datenschutz</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

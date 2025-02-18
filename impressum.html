@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wuschelkopf Hamburg</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
+
+    <style>
+        /* Welcome Section */
+        .welcome-hero {
+            position: relative;
+            height: 80vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(158, 45, 78, 0.2), rgba(122, 35, 64, 0.5)),
+                        url('img/welcome-bg.jpg') center/cover;
+            z-index: -1;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .welcome-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .welcome-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .cta-button {
+            background-color: #9E2D4E;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #7a2340;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .welcome-title {
+                font-size: 2.5rem;
+            }
+
+            .welcome-text {
+                font-size: 1rem;
+            }
+
+            .hero-background {
+                background-position: 75% center;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+  <!-- Haupt-Header -->
+  <header class="main-header">
+    <nav>
+      <ul class="nav-links">
+          <li><a href="index.html" class="logo-link"><img src="img/logo_wuschelkopf2" alt="Logo"></a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="preise.html">Service & Preise</a></li>
+        <li><a href="#products">Produkte</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href=contact.html>Kontakt</a></li>
+      </ul>
+      <div class="burger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!-- Subheader -->
+  <header class="sub-header">
+    <p><i class="fas fa-phone"></i><b>Telefonnummer:</b> +49 40 87 43 40 &nbsp | &nbsp &#x2702 <i class="fas fa-envelope"></i><b>E-Mail:</b> info@wuschelkopf-hamburg.de</p>
+  </header>
+
+
+
+
+</div>
+<div class="impressum-container">
+    <h1>Impressum</h1>
+    <section>
+      <h2>Angaben gemäß § 5 TMG:</h2>
+      <p><strong>Wuschelkopf UG (haftungsbeschränkt)</strong><br>
+      Wedeler Landstr. 48<br>
+      22559 Hamburg</p>
+    </section>
+    <section>
+      <h2>Vertreten durch:</h2>
+      <p>Wolfgang Jacobs</p>
+    </section>
+    <section>
+      <h2>Kontakt:</h2>
+      <p>Telefon: 040 - 87 43 40<br>
+      Telefax: 040 - 18 23 35 05<br>
+      E-Mail: wolfgangjacobs@gmx.de</p>
+    </section>
+    <section>
+      <h2>Eintragung im Handelsregister:</h2>
+      <p>Registergericht: Amtsgericht Hamburg<br>
+      Registernummer: HRB 141580</p>
+    </section>
+    <section>
+      <h2>Umsatzsteuer-ID:</h2>
+      <p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: 4276801673</p>
+    </section>
+    <section>
+      <h2>Angaben zur Berufshaftpflichtversicherung:</h2>
+      <p>Name und Sitz der Gesellschaft: WWK Versicherung, 80292 München<br>
+      Geltungsraum der Versicherung: Deutschland</p>
+    </section>
+    <section>
+      <h2>Haftungsausschluss (Disclaimer):</h2>
+      <h3>Haftung für Inhalte</h3>
+      <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+      <h3>Haftung für Links</h3>
+      <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+      <h3>Urheberrecht</h3>
+      <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Öffnungszeiten</h3>
+        <p>Mo-Fr: 9:00 - 18:00</p>
+        <p>Sa: 10:00 - 14:00</p>
+        <p>So: Geschlossen</p>
+      </div>
+      <div class="footer-section">
+        <h3>Kontakt</h3>
+        <p>Wuschelkopf Hamburg</p>
+        <p>Musterstraße 123</p>
+        <p>12345 Hamburg</p>
+        <p><a href="impressum.html">Impressum</a> | <a href="#">Datenschutz</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

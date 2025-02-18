@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wuschelkopf Hamburg</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
+
+    <style>
+        /* Welcome Section */
+        .welcome-hero {
+            position: relative;
+            height: 80vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(158, 45, 78, 0.2), rgba(122, 35, 64, 0.5)),
+                        url('img/welcome-bg.jpg') center/cover;
+            z-index: -1;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .welcome-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .welcome-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .cta-button {
+            background-color: #9E2D4E;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #7a2340;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .welcome-title {
+                font-size: 2.5rem;
+            }
+
+            .welcome-text {
+                font-size: 1rem;
+            }
+
+            .hero-background {
+                background-position: 75% center;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+  <!-- Haupt-Header -->
+  <header class="main-header">
+    <nav>
+      <ul class="nav-links">
+          <li><a href="index.html" class="logo-link"><img src="img/logo_wuschelkopf2.png" alt="Logo"></a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="preise.html">Service & Preise</a></li>
+        <li><a href="#products">Produkte</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href=contact.html>Kontakt</a></li>
+      </ul>
+      <div class="burger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!-- Subheader -->
+  <header class="sub-header">
+    <p><i class="fas fa-phone"></i><b>Telefonnummer:</b> +49 40 87 43 40 &nbsp | &nbsp &#x2702 <i class="fas fa-envelope"></i><b>E-Mail:</b> info@wuschelkopf-hamburg.de</p>
+  </header>
+
+
+<section class="welcome-hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="welcome-title">&#x2702 Herzlich Willkommen &#x2764</h1>
+            <p class="welcome-text">
+                Bei Wuschelkopf Hamburg vereinen wir handwerkliche Perfektion mit modernster Haarpflege.
+                Tauchen Sie ein in eine Welt der Entspannung und lassen Sie sich von unseren Experten
+                verwöhnen - denn jedes Haar verdient individuelle Aufmerksamkeit.
+            </p>
+            <a href="contact.html" class="cta-button">Jetzt Termin vereinbaren</a>
+            <p class="down_arrow">&darr;</p>
+        </div>
+    </section>
+
+
+    <!-- Rest der Seite -->
+
+  <!--Teammitglieder Vorstellung-->
+
+<section class="team-section">
+        <h1>Unser Expertenteam</h1>
+        <div class="team-grid">
+            <!-- Teammitglied 1 -->
+            <div class="team-member">
+                <img src="img/bild.jpg" alt="Max Mustermann" class="member-image">
+                <div class="member-info">
+                    <h2 class="member-name">Max Mustermann</h2>
+                    <p class="member-position">Hairstylist & Color-Expert</p>
+                    <p class="member-bio">
+                        "Meine Leidenschaft sind moderne Schnitte und individuelle Farbkonzepte.
+                        Jeder Kunde verdient einen Look, der perfekt zu seiner Persönlichkeit passt."
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teammitglied 2 -->
+            <div class="team-member">
+                <img src="img/bild.jpg" alt="Anna Schmidt" class="member-image">
+                <div class="member-info">
+                    <h2 class="member-name">Anna Schmidt</h2>
+                    <p class="member-position">Bart-Spezialistin</p>
+                    <p class="member-bio">
+                        "Perfekte Bartpflege ist eine Kunstform. Bei mir bekommt jeder Bart
+                        die Aufmerksamkeit, die er verdient - vom Styling bis zur Hautpflege."
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="img/bild.jpg" alt="Max Mustermann" class="member-image">
+                <div class="member-info">
+                    <h2 class="member-name">Max Mustermann</h2>
+                    <p class="member-position">Hairstylist & Color-Expert</p>
+                    <p class="member-bio">
+                        "Meine Leidenschaft sind moderne Schnitte und individuelle Farbkonzepte.
+                        Jeder Kunde verdient einen Look, der perfekt zu seiner Persönlichkeit passt."
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="img/bild.jpg" alt="Max Mustermann" class="member-image">
+                <div class="member-info">
+                    <h2 class="member-name">Max Mustermann</h2>
+                    <p class="member-position">Hairstylist & Color-Expert</p>
+                    <p class="member-bio">
+                        "Meine Leidenschaft sind moderne Schnitte und individuelle Farbkonzepte.
+                        Jeder Kunde verdient einen Look, der perfekt zu seiner Persönlichkeit passt."
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weitere Teammitglieder analog einfügen -->
+        </div>
+    </section>
+
+  <!-- Service & Preise -->
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Öffnungszeiten</h3>
+        <p>Mo-Fr: 9:00 - 18:00</p>
+        <p>Sa: 10:00 - 14:00</p>
+        <p>So: Geschlossen</p>
+      </div>
+      <div class="footer-section">
+        <h3>Kontakt</h3>
+        <p>Wuschelkopf Hamburg</p>
+        <p>Musterstraße 123</p>
+        <p>12345 Hamburg</p>
+        <p><a href="impressum.html">Impressum</a> | <a href="#">Datenschutz</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
